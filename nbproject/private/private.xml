@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/var/www/trackshirt/protected/config/main.php</file>
+        <file>file:/var/www/trackshirt/protected/controllers/SiteController.php</file>
+        <file>file:/var/www/trackshirt/protected/views/site/details.php</file>
+        <file>file:/var/www/trackshirt/protected/views/site/hide.php</file>
+        <file>file:/var/www/trackshirt/protected/views/site/entry-shirt.php</file>
+        <file>file:/var/www/trackshirt/protected/models/TrackEntryForm.php</file>
+        <file>file:/var/www/trackshirt/protected/models/HideForm.php</file>
+        <file>file:/var/www/trackshirt/protected/views/site/details-product.php</file>
+    </open-files>
+</project-private>
