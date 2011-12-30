@@ -2373,3 +2373,22 @@ in /var/www/hiderefer/index.php (13)
 2011/11/18 19:56:25 [warning] [application] Failed to set unsafe attribute "urlBbcode" of "HideForm".
 in /var/www/hiderefer/protected/controllers/SiteController.php (30)
 in /var/www/hiderefer/index.php (13)
+2011/12/31 00:15:24 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.user.components" is invalid. Make sure it points to an existing PHP file.' in /var/www/yii/framework/YiiBase.php:321
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('application.mod...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('user')
+#3 /var/www/trackshirt/protected/models/LoginForm.php(25): CModule->__get('user')
+#4 /var/www/yii/framework/validators/CInlineValidator.php(39): LoginForm->authenticate('password', Array)
+#5 /var/www/yii/framework/validators/CValidator.php(192): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 /var/www/yii/framework/base/CModel.php(152): CValidator->validate(Object(LoginForm), NULL)
+#7 /var/www/trackshirt/protected/controllers/SiteController.php(107): CModel->validate()
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#9 /var/www/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('login')
+#13 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('site/login')
+#14 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#15 /var/www/trackshirt/index.php(13): CApplication->run()
+#16 {main} REQUEST_URI=/trackshirt/index.php/site/login

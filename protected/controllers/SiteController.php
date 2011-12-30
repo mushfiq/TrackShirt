@@ -48,16 +48,13 @@ class SiteController extends Controller {
         if (isset($_POST['TrackSearchForm'])) {
             $track = new Track;
             $track->lot_number = ($_POST['TrackSearchForm']['searchBox']);
-            
-            
-             $product = Track::model()->find('lot_number=:lot_number', array(':lot_number' => $track->lot_number));
-               $this->render('details-product', array('product'=>$product));
-               
-        }
-        else{
+
+
+            $product = Track::model()->find('lot_number=:lot_number', array(':lot_number' => $track->lot_number));
+            $this->render('details-product', array('product' => $product));
+        } else {
             $this->render('details', array('model' => $model));
         }
-        
     }
 
     public function actionDetails() {
@@ -99,6 +96,19 @@ class SiteController extends Controller {
         } else {
             $this->render('entry', array('model' => $model));
         }
+    }
+
+    public function actionLogin() {
+        $model = new LoginForm;
+        // collect user input data
+        if (isset($_POST['LoginForm'])) {
+            $model->attributes = $_POST['LoginForm'];
+            // validate user input and redirect to previous page if valid
+            if ($model->validate() && $model->login())
+                $this->redirect(Yii::app()->user->returnUrl);
+        }
+        // display the login form
+        $this->render('login', array('model' => $model));
     }
 
 }

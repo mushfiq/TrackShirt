@@ -35,6 +35,7 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+                    'class' => 'application.modules.user.components',
 		),
 		// uncomment the following to enable URLs in path-format
 		
@@ -89,4 +90,10 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
 	),
+    
+//    'user'=>array(
+//            'class' => 'application.modules.user.components',
+//            'allowAutoLogin'=>true,
+////            'loginUrl' => array('//user/user/login'),
+//        ),
 );
