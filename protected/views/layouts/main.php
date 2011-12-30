@@ -33,24 +33,27 @@
                     'items' => array(
                         array('label' => 'Home', 'url' => array('/')),
                         array('label' => 'Search', 'url' => array('site/index', 'view' => 'index')),
+                        array('label' => 'Login', 'url' => array('site/login', 'view' => 'login'), 'visible' => Yii::app()->user->isGuest),
+                        array('label' => 'Product Entry', 'url' => array('/site/entry'), 'visible' => !Yii::app()->user->isGuest),
+                        array('label' => 'Logout', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest),
                     ),
                 ));
                 ?>
             </div><!-- mainmenu -->
-            <?php if (isset($this->breadcrumbs)): ?>
+                <?php if (isset($this->breadcrumbs)): ?>
                 <?php
                 $this->widget('zii.widgets.CBreadcrumbs', array(
                     'links' => $this->breadcrumbs,
                 ));
                 ?><!-- breadcrumbs -->
-                <?php endif ?>
+            <?php endif ?>
 
-                <?php echo $content; ?>
+            <?php echo $content; ?>
 
             <div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
 		All Rights Reserved.<br/>
-<?php echo Yii::powered(); ?>
+                <?php echo Yii::powered(); ?>
             </div><!-- footer -->
 
         </div><!-- page -->

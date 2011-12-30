@@ -63,38 +63,41 @@ class SiteController extends Controller {
     }
 
     public function actionEntry() {
-        $model = new TrackForm;
+        if (!Yii::app()->user->isGuest) {
+
+            $model = new TrackForm;
 
 
-        if (isset($_POST['TrackForm'])) {
-            $entry = new Track;
-            print_r($_POST);
+            if (isset($_POST['TrackForm'])) {
+                $entry = new Track;
+                print_r($_POST);
 //           die;
 //                          if ($model->validate()) {
-            try {
-                $entry->lot_number = $_POST['TrackForm']['lot_number'];
-                $entry->print_date = $_POST['TrackForm']['print_date'];
+                try {
+                    $entry->lot_number = $_POST['TrackForm']['lot_number'];
+                    $entry->print_date = $_POST['TrackForm']['print_date'];
 
-                $entry->print_location = $_POST['TrackForm']['print_location'];
-                $entry->contact_bussiness = $_POST['TrackForm']['contact_bussiness'];
+                    $entry->print_location = $_POST['TrackForm']['print_location'];
+                    $entry->contact_bussiness = $_POST['TrackForm']['contact_bussiness'];
 
-                $entry->contact_city = $_POST['TrackForm']['contact_city'];
-                $entry->contact_state = $_POST['TrackForm']['contact_state'];
-                $entry->contact_zip_code = $_POST['TrackForm']['contact_zip_code'];
-                $entry->contact_phone = $_POST['TrackForm']['contact_phone'];
+                    $entry->contact_city = $_POST['TrackForm']['contact_city'];
+                    $entry->contact_state = $_POST['TrackForm']['contact_state'];
+                    $entry->contact_zip_code = $_POST['TrackForm']['contact_zip_code'];
+                    $entry->contact_phone = $_POST['TrackForm']['contact_phone'];
 //                    $entry->contact_city = $_POST['TrackForm']['contact_city'];
 //                    $entry->contact_city = $_POST['TrackForm']['contact_city'];
 //                    $entry->contact_city = $_POST['TrackForm']['contact_city'];
 //                    $entry->contact_city = $_POST['TrackForm']['contact_city'];
-                $entry->save();
-                print "sucess!";
-                $this->render('success', array('model' => $model));
-            } catch (Exception $e) {
-                echo 'Caught exception: ', $e->getMessage(), "\n";
-            }
+                    $entry->save();
+                    print "sucess!";
+                    $this->render('success', array('model' => $model));
+                } catch (Exception $e) {
+                    echo 'Caught exception: ', $e->getMessage(), "\n";
+                }
 //                          }
-        } else {
-            $this->render('entry', array('model' => $model));
+            } else {
+                $this->render('entry', array('model' => $model));
+            }
         }
     }
 
@@ -104,11 +107,18 @@ class SiteController extends Controller {
         if (isset($_POST['LoginForm'])) {
             $model->attributes = $_POST['LoginForm'];
             // validate user input and redirect to previous page if valid
-            if ($model->validate() && $model->login())
-                $this->redirect(Yii::app()->user->returnUrl);
+            if ($model->validate() && $model->login()) {
+
+                $this->redirect('/trackshirt/index.php/site/entry');
+            }
         }
         // display the login form
         $this->render('login', array('model' => $model));
+    }
+
+    public function actionLogout() {
+        Yii::app()->user->logout();
+        $this->redirect(Yii::app()->homeUrl);
     }
 
 }

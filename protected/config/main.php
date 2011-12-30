@@ -35,7 +35,9 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
-                    'class' => 'application.modules.user.components',
+//                    'class' => 'application.modules.user.components',
+                     'loginUrl' => array('/login/'),
+                    
 		),
 		// uncomment the following to enable URLs in path-format
 		
