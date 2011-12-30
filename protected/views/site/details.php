@@ -23,12 +23,10 @@
 
       
 
-        <div id="linkSubmit">
+        <div>
             <?php echo CHtml::submitButton('Submit'); ?> 
         </div>
-        <div id="linkCloak">
-            <?php echo CHtml::submitButton('Help'); ?>
-        </div>
+      
 
         <?php $this->endWidget(); ?>
 

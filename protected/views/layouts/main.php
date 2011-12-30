@@ -32,7 +32,7 @@
                 $this->widget('zii.widgets.CMenu', array(
                     'items' => array(
                         array('label' => 'Home', 'url' => array('/')),
-                        array('label' => 'About', 'url' => array('/site/page', 'view' => 'about')),
+                        array('label' => 'Search', 'url' => array('site/index', 'view' => 'index')),
                     ),
                 ));
                 ?>

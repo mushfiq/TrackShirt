@@ -46,10 +46,18 @@ class SiteController extends Controller {
     public function actionIndex() {
         $model = new TrackSearchForm;
         if (isset($_POST['TrackSearchForm'])) {
-            print "here";
-            die;
+            $track = new Track;
+            $track->lot_number = ($_POST['TrackSearchForm']['searchBox']);
+            
+            
+             $product = Track::model()->find('lot_number=:lot_number', array(':lot_number' => $track->lot_number));
+               $this->render('details-product', array('product'=>$product));
+               
         }
-        $this->render('details', array('model' => $model));
+        else{
+            $this->render('details', array('model' => $model));
+        }
+        
     }
 
     public function actionDetails() {
