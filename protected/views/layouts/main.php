@@ -32,7 +32,7 @@
                 $this->widget('zii.widgets.CMenu', array(
                     'items' => array(
                         array('label' => 'Home', 'url' => array('/')),
-                        array('label' => 'Search', 'url' => array('site/index', 'view' => 'index')),
+                        
                         array('label' => 'Login', 'url' => array('site/login', 'view' => 'login'), 'visible' => Yii::app()->user->isGuest),
                         array('label' => 'Product Entry', 'url' => array('/site/entry'), 'visible' => !Yii::app()->user->isGuest),
                         array('label' => 'Logout', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest),
@@ -51,9 +51,9 @@
             <?php echo $content; ?>
 
             <div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> by Shirt Tracker.<br/>
 		All Rights Reserved.<br/>
-                <?php echo Yii::powered(); ?>
+                
             </div><!-- footer -->
 
         </div><!-- page -->
