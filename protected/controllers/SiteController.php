@@ -114,15 +114,7 @@ class SiteController extends Controller {
                         
                         // redirect to success page
                     }
-
-
-
-
-//                    $entry->contact_city = $_POST['TrackForm']['contact_city'];
-//                    $entry->contact_city = $_POST['TrackForm']['contact_city'];
-//                    $entry->contact_city = $_POST['TrackForm']['contact_city'];
-//                    $entry->contact_city = $_POST['TrackForm']['contact_city'];
-                    
+            
                     
                 } catch (Exception $e) {
                     echo 'Caught exception: ', $e->getMessage(), "\n";

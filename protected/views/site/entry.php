@@ -97,11 +97,6 @@ $this->pageTitle = Yii::app()->name . ' - Shirt Track!';
             <?php echo $form->error($model, 'shirt_cpsia_certification'); ?>
         </div>
         
-        <div class="row" id="url_direct">
-            <?php echo $form->labelEx($model, 'shirt_cpsia_certification'); ?>
-            <?php echo $form->fileField($model, 'shirt_cpsia_certification'); ?>
-            <?php echo $form->error($model, 'shirt_cpsia_certification'); ?>
-        </div>
         
         <div class="row" id="url_direct">
             <?php echo $form->labelEx($model, 'ink_cpsia_certification'); ?>
