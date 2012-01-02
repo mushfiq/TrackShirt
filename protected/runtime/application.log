@@ -2729,3 +2729,308 @@ Stack trace:
 #1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
 #2 /var/www/trackshirt/index.php(13): CApplication->run()
 #3 {main} REQUEST_URI=/trackshirt/index.php/user/logout
+2012/01/02 21:14:04 [error] [php] Undefined variable: Yii (/var/www/trackshirt/protected/controllers/SiteController.php:151)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(278): SiteController->runAction()
+#1 /var/www/yii/framework/web/CController.php(257): SiteController->runActionWithFilters()
+#2 /var/www/yii/framework/web/CWebApplication.php(277): SiteController->run()
+#3 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#5 /var/www/trackshirt/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackshirt/index.php/site/create
+in /var/www/trackshirt/protected/controllers/SiteController.php (151)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:16:46 [error] [php] move_uploaded_file(): The second argument to copy() function cannot be a directory (/var/www/yii/framework/web/CUploadedFile.php:183)
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionCreate()
+#1 /var/www/yii/framework/web/CController.php(300): CInlineAction->runWithParams()
+#2 /var/www/yii/framework/web/CController.php(278): SiteController->runAction()
+#3 /var/www/yii/framework/web/CController.php(257): SiteController->runActionWithFilters()
+#4 /var/www/yii/framework/web/CWebApplication.php(277): SiteController->run()
+#5 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController()
+#6 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#7 /var/www/trackshirt/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackshirt/index.php/site/create
+in /var/www/trackshirt/protected/controllers/SiteController.php (151)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:17:16 [error] [php] move_uploaded_file(): The second argument to copy() function cannot be a directory (/var/www/yii/framework/web/CUploadedFile.php:183)
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionCreate()
+#1 /var/www/yii/framework/web/CController.php(300): CInlineAction->runWithParams()
+#2 /var/www/yii/framework/web/CController.php(278): SiteController->runAction()
+#3 /var/www/yii/framework/web/CController.php(257): SiteController->runActionWithFilters()
+#4 /var/www/yii/framework/web/CWebApplication.php(277): SiteController->run()
+#5 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController()
+#6 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#7 /var/www/trackshirt/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackshirt/index.php/site/create
+in /var/www/trackshirt/protected/controllers/SiteController.php (151)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:30:37 [warning] [application] Failed to set unsafe attribute "lot_number" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:30:37 [warning] [application] Failed to set unsafe attribute "print_date" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:30:37 [warning] [application] Failed to set unsafe attribute "print_location" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:30:37 [warning] [application] Failed to set unsafe attribute "contact_bussiness" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:30:37 [warning] [application] Failed to set unsafe attribute "contact_city" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:30:37 [warning] [application] Failed to set unsafe attribute "contact_state" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:30:37 [warning] [application] Failed to set unsafe attribute "contact_zip_code" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:30:37 [warning] [application] Failed to set unsafe attribute "contact_phone" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:30:37 [warning] [application] Failed to set unsafe attribute "product_image" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:32:38 [warning] [application] Failed to set unsafe attribute "lot_number" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:32:38 [warning] [application] Failed to set unsafe attribute "print_date" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:32:38 [warning] [application] Failed to set unsafe attribute "print_location" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:32:38 [warning] [application] Failed to set unsafe attribute "contact_bussiness" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:32:38 [warning] [application] Failed to set unsafe attribute "contact_city" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:32:38 [warning] [application] Failed to set unsafe attribute "contact_state" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:32:38 [warning] [application] Failed to set unsafe attribute "contact_zip_code" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:32:38 [warning] [application] Failed to set unsafe attribute "contact_phone" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:32:38 [warning] [application] Failed to set unsafe attribute "product_image" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:32:52 [warning] [application] Failed to set unsafe attribute "lot_number" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:32:52 [warning] [application] Failed to set unsafe attribute "print_date" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:32:52 [warning] [application] Failed to set unsafe attribute "print_location" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:32:52 [warning] [application] Failed to set unsafe attribute "contact_bussiness" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:32:52 [warning] [application] Failed to set unsafe attribute "contact_city" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:32:52 [warning] [application] Failed to set unsafe attribute "contact_state" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:32:52 [warning] [application] Failed to set unsafe attribute "contact_zip_code" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:32:52 [warning] [application] Failed to set unsafe attribute "contact_phone" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:36:31 [warning] [application] Failed to set unsafe attribute "lot_number" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:36:31 [warning] [application] Failed to set unsafe attribute "print_date" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:36:31 [warning] [application] Failed to set unsafe attribute "print_location" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:36:31 [warning] [application] Failed to set unsafe attribute "contact_bussiness" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:36:31 [warning] [application] Failed to set unsafe attribute "contact_city" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:36:31 [warning] [application] Failed to set unsafe attribute "contact_state" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:36:31 [warning] [application] Failed to set unsafe attribute "contact_zip_code" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:36:31 [warning] [application] Failed to set unsafe attribute "contact_phone" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:37:23 [warning] [application] Failed to set unsafe attribute "lot_number" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:37:23 [warning] [application] Failed to set unsafe attribute "print_date" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:37:23 [warning] [application] Failed to set unsafe attribute "print_location" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:37:23 [warning] [application] Failed to set unsafe attribute "contact_bussiness" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:37:23 [warning] [application] Failed to set unsafe attribute "contact_city" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:37:23 [warning] [application] Failed to set unsafe attribute "contact_state" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:37:23 [warning] [application] Failed to set unsafe attribute "contact_zip_code" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:37:23 [warning] [application] Failed to set unsafe attribute "contact_phone" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:37:49 [warning] [application] Failed to set unsafe attribute "lot_number" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:37:49 [warning] [application] Failed to set unsafe attribute "print_date" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:37:49 [warning] [application] Failed to set unsafe attribute "print_location" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:37:49 [warning] [application] Failed to set unsafe attribute "contact_bussiness" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:37:49 [warning] [application] Failed to set unsafe attribute "contact_city" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:37:49 [warning] [application] Failed to set unsafe attribute "contact_state" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:37:49 [warning] [application] Failed to set unsafe attribute "contact_zip_code" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:37:49 [warning] [application] Failed to set unsafe attribute "contact_phone" of "Track".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:41:44 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shirt_tracker.Track' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `Track`.
+in /var/www/trackshirt/protected/controllers/SiteController.php (72)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:41:44 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Track" for active record class "Track" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2276
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(372): CActiveRecordMetaData->__construct(Object(Track))
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(387): CActiveRecord::model('Track')
+#2 /var/www/yii/framework/db/ar/CActiveRecord.php(62): CActiveRecord->getMetaData()
+#3 /var/www/trackshirt/protected/controllers/SiteController.php(72): CActiveRecord->__construct()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionEntry()
+#5 /var/www/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('entry')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('site/entry')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/trackshirt/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/trackshirt/index.php/site/entry
+2012/01/02 21:43:33 [error] [php] include(product_details.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/trackshirt/protected/controllers/SiteController.php(72): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionEntry()
+#2 /var/www/yii/framework/web/CController.php(300): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(278): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(257): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(277): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#8 /var/www/trackshirt/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackshirt/index.php/site/entry
+in /var/www/trackshirt/protected/controllers/SiteController.php (72)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:45:18 [warning] [application] Failed to set unsafe attribute "lot_number" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:45:18 [warning] [application] Failed to set unsafe attribute "print_date" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:45:18 [warning] [application] Failed to set unsafe attribute "print_location" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:45:18 [warning] [application] Failed to set unsafe attribute "contact_bussiness" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:45:18 [warning] [application] Failed to set unsafe attribute "contact_city" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:45:18 [warning] [application] Failed to set unsafe attribute "contact_state" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:45:18 [warning] [application] Failed to set unsafe attribute "contact_zip_code" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:45:18 [warning] [application] Failed to set unsafe attribute "contact_phone" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:46:01 [warning] [application] Failed to set unsafe attribute "lot_number" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:46:01 [warning] [application] Failed to set unsafe attribute "print_date" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:46:01 [warning] [application] Failed to set unsafe attribute "print_location" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:46:01 [warning] [application] Failed to set unsafe attribute "contact_bussiness" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:46:01 [warning] [application] Failed to set unsafe attribute "contact_city" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:46:01 [warning] [application] Failed to set unsafe attribute "contact_state" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:46:01 [warning] [application] Failed to set unsafe attribute "contact_zip_code" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 21:46:01 [warning] [application] Failed to set unsafe attribute "contact_phone" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 22:04:02 [warning] [application] Failed to set unsafe attribute "lot_number" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 22:04:02 [warning] [application] Failed to set unsafe attribute "print_date" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 22:04:02 [warning] [application] Failed to set unsafe attribute "print_location" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 22:04:02 [warning] [application] Failed to set unsafe attribute "contact_bussiness" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 22:04:02 [warning] [application] Failed to set unsafe attribute "contact_city" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 22:04:02 [warning] [application] Failed to set unsafe attribute "contact_state" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 22:04:02 [warning] [application] Failed to set unsafe attribute "contact_zip_code" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 22:04:02 [warning] [application] Failed to set unsafe attribute "contact_phone" of "product_details".
+in /var/www/trackshirt/protected/controllers/SiteController.php (91)
+in /var/www/trackshirt/index.php (13)
+2012/01/02 22:20:20 [error] [php] include(Track.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/trackshirt/protected/controllers/SiteController.php(72): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionEntry()
+#2 /var/www/yii/framework/web/CController.php(300): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(278): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(257): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(277): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#8 /var/www/trackshirt/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackshirt/index.php/site/entry
+in /var/www/trackshirt/protected/controllers/SiteController.php (72)
+in /var/www/trackshirt/index.php (13)

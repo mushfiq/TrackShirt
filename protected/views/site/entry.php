@@ -15,11 +15,11 @@ $this->pageTitle = Yii::app()->name . ' - Shirt Track!';
     <p>
         If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
     </p>
-    
-   
-    
-   
-  
+
+
+
+
+
     <div class="form">
 
         <?php
@@ -29,6 +29,7 @@ $this->pageTitle = Yii::app()->name . ' - Shirt Track!';
                     'clientOptions' => array(
                         'validateOnSubmit' => true,
                     ),
+                    'htmlOptions' => array('enctype' => 'multipart/form-data'),
                 ));
         ?>
 
@@ -47,7 +48,7 @@ $this->pageTitle = Yii::app()->name . ' - Shirt Track!';
             <?php echo $form->textField($model, 'print_date'); ?>
             <?php echo $form->error($model, 'print_date'); ?>
         </div>
-       <div class="row" id="url_direct">
+        <div class="row" id="url_direct">
             <?php echo $form->labelEx($model, 'print_location'); ?>
             <?php echo $form->textArea($model, 'print_location'); ?>
             <?php echo $form->error($model, 'print_location'); ?>
@@ -77,11 +78,50 @@ $this->pageTitle = Yii::app()->name . ' - Shirt Track!';
             <?php echo $form->textField($model, 'contact_phone'); ?>
             <?php echo $form->error($model, 'contact_phone'); ?>
         </div>
- 
 
-<!--        <div id="linkSubmit">
-            <?php //echo CHtml::submitButton('Create'); ?> 
-        </div>-->
+        <div class="row" id="url_direct">
+            <?php echo $form->labelEx($model, 'product_image'); ?>
+            <?php echo $form->fileField($model, 'product_image'); ?>
+            <?php echo $form->error($model, 'product_image'); ?>
+        </div>
+
+        <div class="row" id="url_direct">
+            <?php echo $form->labelEx($model, 'general_conformity_certificate'); ?>
+            <?php echo $form->fileField($model, 'general_conformity_certificate'); ?>
+            <?php echo $form->error($model, 'general_conformity_certificate'); ?>
+        </div>
+        
+        <div class="row" id="url_direct">
+            <?php echo $form->labelEx($model, 'shirt_cpsia_certification'); ?>
+            <?php echo $form->fileField($model, 'shirt_cpsia_certification'); ?>
+            <?php echo $form->error($model, 'shirt_cpsia_certification'); ?>
+        </div>
+        
+        <div class="row" id="url_direct">
+            <?php echo $form->labelEx($model, 'shirt_cpsia_certification'); ?>
+            <?php echo $form->fileField($model, 'shirt_cpsia_certification'); ?>
+            <?php echo $form->error($model, 'shirt_cpsia_certification'); ?>
+        </div>
+        
+        <div class="row" id="url_direct">
+            <?php echo $form->labelEx($model, 'ink_cpsia_certification'); ?>
+            <?php echo $form->fileField($model, 'ink_cpsia_certification'); ?>
+            <?php echo $form->error($model, 'ink_cpsia_certification'); ?>
+        </div>
+        
+        <div class="row" id="url_direct">
+            <?php echo $form->labelEx($model, 'vinyl_lettering_cpsia_certification'); ?>
+            <?php echo $form->fileField($model, 'vinyl_lettering_cpsia_certification'); ?>
+            <?php echo $form->error($model, 'vinyl_lettering_cpsia_certification'); ?>
+        </div>
+        
+        
+
+
+
+        <!--        <div id="linkSubmit">
+        <?php //echo CHtml::submitButton('Create'); ?> 
+                </div>-->
         <div id="linkCloak">
             <?php echo CHtml::submitButton('Submit'); ?>
         </div>
