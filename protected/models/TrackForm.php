@@ -13,6 +13,7 @@ class TrackForm extends CFormModel {
     public $contact_bussiness;
     public $contact_city;
     public $contact_state;
+    public $contact_address;
     public $contact_zip_code;
     public $contact_phone;
     public $product_image;

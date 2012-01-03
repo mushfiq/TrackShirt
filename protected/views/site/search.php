@@ -11,19 +11,21 @@
                 ));
         ?>
 
-        <p class="note">Fields with <span class="required">*</span> are required.</p>
+<!--        <p class="note">Enter the lot number from your shirt <span class="required">*</span> </p>-->
 
         <?php echo $form->errorSummary($model); ?>
 
+        
+        
         <div class="row">
-            <?php echo $form->labelEx($model, 'searchBox'); ?>
+           <?php echo $form->labelEx($model, 'Enter the lot number from your shirt'); ?>
             <?php echo $form->textField($model, 'searchBox'); ?>
             <?php echo $form->error($model, 'searchBox'); ?>
         </div>
 
       
 
-        <div>
+        <div style="margin-left: 30px;">
             <?php echo CHtml::submitButton('Submit'); ?> 
         </div>
       

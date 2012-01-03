@@ -46,14 +46,18 @@ class SiteController extends Controller {
     public function actionIndex() {
         $model = new TrackSearchForm;
         if (isset($_POST['TrackSearchForm'])) {
-            $track = new Track;
-            $track->lot_number = ($_POST['TrackSearchForm']['searchBox']);
 
+            if ((strlen($_POST['TrackSearchForm']["searchBox"]) == 0)) {
+                $this->render('search', array('model' => $model));
+            } elseif (count($_POST) > 0) {
 
-            $product = Track::model()->find('lot_number=:lot_number', array(':lot_number' => $track->lot_number));
-            $this->render('details-product', array('product' => $product));
+                $track = new Track;
+                $track->lot_number = ($_POST['TrackSearchForm']['searchBox']);
+                $product = Track::model()->find('lot_number=:lot_number', array(':lot_number' => $track->lot_number));
+                $this->render('product_temp', array('product' => $product));
+            }
         } else {
-            $this->render('details', array('model' => $model));
+            $this->render('search', array('model' => $model));
         }
     }
 
@@ -61,6 +65,7 @@ class SiteController extends Controller {
 
         $this->render('details-product');
     }
+
 
     public function actionEntry() {
         if (!Yii::app()->user->isGuest) {

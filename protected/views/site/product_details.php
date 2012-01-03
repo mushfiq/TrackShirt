@@ -1,3 +1,4 @@
+<div id="content">
 <? if($product):?>
 <?php if($product->lot_number):?>
 Lot Number: <?php echo $product->lot_number;?>
@@ -63,3 +64,5 @@ Vinyl lettering Cpsia Certification:
 No Product Found!
 
 <?php endif;?>
+
+</div>
