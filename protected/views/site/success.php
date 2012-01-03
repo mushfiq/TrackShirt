@@ -1,11 +1,11 @@
 <?php
-$this->pageTitle=Yii::app()->name . ' - HideRefer';
+$this->pageTitle=Yii::app()->name . ' - Sucess';
 $this->breadcrumbs=array(
-	'Contact',
+	'Success',
 );
 ?>
 
-<h1>HideRefer</h1>
+
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
@@ -16,7 +16,7 @@ $this->breadcrumbs=array(
 <?php else: ?>
 
 <p>
-Your cloaked link is:
+The Product has been sucesfully Saved.
 </p>
 
 <div class="form">

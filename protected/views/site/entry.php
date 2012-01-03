@@ -1,8 +1,8 @@
 <?php
-$this->pageTitle = Yii::app()->name . ' - Shirt Track!';
+$this->pageTitle = Yii::app()->name . ' - Shirt Tracking';
 ?>
 
-<h1>Shirt Track</h1>
+<h1>Shirt Tracking</h1>
 
 <?php if (Yii::app()->user->hasFlash('contact')): ?>
 

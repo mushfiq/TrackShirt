@@ -61,7 +61,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=shirt_tracker',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'agog',
+			'password' => '',
 			'charset' => 'utf8',
 		),
 		

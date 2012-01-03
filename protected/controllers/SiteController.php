@@ -91,31 +91,39 @@ class SiteController extends Controller {
                     $entry->general_conformity_certificate = $_POST['TrackForm']['general_conformity_certificate'];
                     $entry->general_conformity_certificate = CUploadedFile::getInstance($model, 'general_conformity_certificate');
                     $entry->shirt_cpsia_certification = $_POST['TrackForm']['shirt_cpsia_certification'];
-                    $entry->shirt_cpsia_certification  = CUploadedFile::getInstance($model, 'shirt_cpsia_certification');
+                    $entry->shirt_cpsia_certification = CUploadedFile::getInstance($model, 'shirt_cpsia_certification');
                     $entry->ink_cpsia_certification = $_POST['TrackForm']['ink_cpsia_certification'];
-                    $entry->ink_cpsia_certification  = CUploadedFile::getInstance($model, 'ink_cpsia_certification');
-                    
+                    $entry->ink_cpsia_certification = CUploadedFile::getInstance($model, 'ink_cpsia_certification');
+
                     $entry->vinyl_lettering_cpsia_certification = $_POST['TrackForm']['vinyl_lettering_cpsia_certification'];
-                    $entry->vinyl_lettering_cpsia_certification  = CUploadedFile::getInstance($model, 'vinyl_lettering_cpsia_certification');
-                    
+                    $entry->vinyl_lettering_cpsia_certification = CUploadedFile::getInstance($model, 'vinyl_lettering_cpsia_certification');
+
                     $entry->product_entry_time = time();
-                    
+
 //                    die;
                     if ($entry->save()) {
+                        if ($entry->product_image) {
+                            $entry->product_image->saveAs($entry->product_image->name, '/trackshirt/uploads');
+                        }
 
-                        $entry->product_image->saveAs($entry->product_image->name, '/trackshirt/uploads');
-                        $entry->general_conformity_certificate->saveAs($entry->general_conformity_certificate->name, '/trackshirt/uploads');
-                        $entry->shirt_cpsia_certification->saveAs($entry->shirt_cpsia_certification->name, '/trackshirt/uploads');
-                        $entry->ink_cpsia_certification->saveAs($entry->ink_cpsia_certification->name, '/trackshirt/uploads');
-                        $entry->vinyl_lettering_cpsia_certification->saveAs($entry->vinyl_lettering_cpsia_certification->name, '/trackshirt/uploads');
+                        if ($entry->general_conformity_certificate) {
+                            $entry->general_conformity_certificate->saveAs($entry->general_conformity_certificate->name, '/trackshirt/uploads');
+                        }
+                        if ($entry->shirt_cpsia_certification) {
+                            $entry->shirt_cpsia_certification->saveAs($entry->shirt_cpsia_certification->name, '/trackshirt/uploads');
+                        }
+                        if ($entry->ink_cpsia_certification) {
+                            $entry->ink_cpsia_certification->saveAs($entry->ink_cpsia_certification->name, '/trackshirt/uploads');
+                        }
+                        if($entry->vinyl_lettering_cpsia_certification){
+                            $entry->vinyl_lettering_cpsia_certification->saveAs($entry->vinyl_lettering_cpsia_certification->name, '/trackshirt/uploads');
+
+                        }
                         
-                        print "success";
                         $this->render('success', array('model' => $model));
-                        
+
                         // redirect to success page
                     }
-            
-                    
                 } catch (Exception $e) {
                     echo 'Caught exception: ', $e->getMessage(), "\n";
                 }
@@ -145,7 +153,5 @@ class SiteController extends Controller {
         Yii::app()->user->logout();
         $this->redirect(Yii::app()->homeUrl);
     }
-
-  
 
 }
